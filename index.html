@@ -36,13 +36,13 @@
       }
 #intro h1 {
       .slogan {
-  font-size: 1.5rem;
   color: gold;
-  margin-top: 20px;
+  font-size: 1.5rem;
   text-align: center;
+  margin-top: 20px;
   opacity: 0;
   animation: fadeInText 4s ease-in forwards;
-  animation-delay: 1s;
+  animation-delay: 1.2s; /* ligeiramente depois dos vaga-lumes */
   line-height: 1.4;
 }
 
@@ -51,6 +51,7 @@
   display: block;
 }
 
+/* A partir de 700px de largura (telas maiores), título vira uma linha só */
 @media (min-width: 700px) {
   .slogan {
     font-size: 2rem;
@@ -65,7 +66,7 @@
     content: " ";
   }
 }
-      }
+
 
       @keyframes fadeInText {
         to {
@@ -225,9 +226,10 @@
     <div id="intro">
   <div id="fireflies"></div>
   <h1 class="slogan">
-    <span class="linha1">Do escuro ao digital —</span>
-    <span class="linha2">ideias ganham vida aqui</span>
-  </h1>
+  <span class="linha1">Do escuro ao digital —</span>
+  <span class="linha2">ideias ganham vida aqui</span>
+</h1>
+
 </div>
     <main id="main">
       <header>
