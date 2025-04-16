@@ -35,13 +35,36 @@
         transition: opacity 1s ease-in-out;
       }
 
-      #intro h1 {
-        font-size: 1.5rem;
-        color: gold;
-        margin-top: 20px;
-        opacity: 0;
-        animation: fadeInText 4s ease-in forwards;
-        animation-delay: 1s;
+      .slogan {
+  font-size: 1.5rem;
+  color: gold;
+  margin-top: 20px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInText 4s ease-in forwards;
+  animation-delay: 1s;
+  line-height: 1.4;
+}
+
+.slogan .linha1,
+.slogan .linha2 {
+  display: block;
+}
+
+@media (min-width: 700px) {
+  .slogan {
+    font-size: 2rem;
+  }
+
+  .slogan .linha1,
+  .slogan .linha2 {
+    display: inline;
+  }
+
+  .slogan .linha1::after {
+    content: " ";
+  }
+}
       }
 
       @keyframes fadeInText {
@@ -200,10 +223,12 @@
   </head>
   <body>
     <div id="intro">
-      <div id="fireflies"></div>
-      <h1>Do escuro ao digital — ideias ganham vida aqui</h1>
-    </div>
-
+  <div id="fireflies"></div>
+  <h1 class="slogan">
+    <span class="linha1">Do escuro ao digital —</span>
+    <span class="linha2">ideias ganham vida aqui</span>
+  </h1>
+</div>
     <main id="main">
       <header>
         <h1>LumenDigital</h1>
