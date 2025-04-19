@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LumenDigital - Portfólio Profissional</title>
+    <meta name="description" content="Portfólio profissional de Guilherme Martins - Soluções web criativas e sob medida." />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
       }
 
       body {
@@ -64,8 +71,7 @@
       }
 
       @keyframes blink {
-        0%,
-        100% {
+        0%, 100% {
           opacity: 0;
         }
         50% {
@@ -83,19 +89,11 @@
       }
 
       main {
-        display: none;
+        display: flex;
         flex-direction: column;
         gap: 20px;
-        animation: fadeInMain 2s ease-in forwards;
-      }
-
-      @keyframes fadeInMain {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
       }
 
       header {
@@ -227,7 +225,7 @@
       </nav>
 
       <section id="sobre">
-       <h2>Quem Sou</h2>
+        <h2>Quem Sou</h2>
         <p>
           💡 Sou Guilherme Martins, desenvolvedor web e criador da <strong>LumenDigital</strong> — onde ideias ganham vida, do escuro ao digital.
           Com foco em design funcional, identidade visual e experiências que brilham, crio soluções sob medida que conectam você ao mundo digital de forma clara, criativa e moderna.
@@ -241,10 +239,7 @@
         <ul>
           <li><strong>Nome Fantasia:</strong> LumenDigital</li>
           <li><strong>Localização:</strong> João Pessoa - PB</li>
-          <li>
-            <strong>Email Profissional:</strong>
-            guilherme.martins.co@outlook.com
-          </li>
+          <li><strong>Email Profissional:</strong> guilherme.martins.co@outlook.com</li>
           <li><strong>CNPJ:</strong> MEI - 00.000.000/0001-00</li>
         </ul>
       </section>
@@ -267,12 +262,8 @@
           <article>
             <h3>Email</h3>
             <p>
-              <a href="mailto:guilhermemartins@gmail.com"
-                >guilhermemartins@gmail.com</a
-              ><br />
-              <a href="mailto:guilherme.martins.co@outlook.com"
-                >guilherme.martins.co@outlook.com</a
-              >
+              <a href="mailto:guilhermemartins@gmail.com">guilhermemartins@gmail.com</a><br />
+              <a href="mailto:guilherme.martins.co@outlook.com">guilherme.martins.co@outlook.com</a>
             </p>
           </article>
 
@@ -283,7 +274,7 @@
 
           <article>
             <h3>LinkedIn</h3>
-            <p><a href="#">linkedin.com/in/guilhermemartins</a></p>
+            <p><a href="https://linkedin.com/in/guilhermemartins" target="_blank">linkedin.com/in/guilhermemartins</a></p>
           </article>
         </div>
 
@@ -294,7 +285,7 @@
         <p>&copy; 2025 LumenDigital — Todos os direitos reservados.</p>
         <p>
           Portfólio em constante construção. Veja mais em:
-          <a href="#">github.com/G-M-Shy</a>
+          <a href="https://github.com/G-M-Shy" target="_blank">github.com/G-M-Shy</a>
         </p>
       </footer>
     </main>
@@ -319,6 +310,7 @@
         setTimeout(() => {
           intro.style.display = "none";
           main.style.display = "flex";
+          main.style.opacity = 1;
         }, 1000);
       }, 5000);
     </script>
