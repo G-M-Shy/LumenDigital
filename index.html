@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LumenDigital - Portfólio Profissional</title>
-    <meta name="description" content="Portfólio profissional de Guilherme Martins - Soluções web criativas e sob medida." />
+    <meta
+      name="description"
+      content="Portfólio profissional de Guilherme Martins - Soluções web criativas e sob medida."
+    />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <style>
       * {
         margin: 0;
@@ -72,7 +77,8 @@
       }
 
       @keyframes blink {
-        0%, 100% {
+        0%,
+        100% {
           opacity: 0;
         }
         50% {
@@ -95,6 +101,7 @@
         gap: 20px;
         opacity: 0;
         transition: opacity 1.5s ease-in-out;
+        display: none;
       }
 
       header {
@@ -202,6 +209,23 @@
           font-size: 1.2rem;
         }
       }
+
+      #voltar-topo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background-color: #ffd700;
+        color: #121212;
+        font-size: 1.5rem;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        cursor: move;
+        z-index: 999;
+        user-select: none;
+      }
     </style>
   </head>
   <body>
@@ -228,10 +252,11 @@
       <section id="sobre">
         <h2>Quem Sou</h2>
         <p>
-          💡 Sou Guilherme Martins, desenvolvedor web e criador da <strong>LumenDigital</strong> — onde ideias ganham vida, do escuro ao digital.
-          Com foco em design funcional, identidade visual e experiências que brilham, crio soluções sob medida que conectam você ao mundo digital de forma clara, criativa e moderna.
-          <br /><br />
-          Cada linha de código aqui tem um propósito: transformar o que é apenas ideia em presença digital impactante.
+          💡 Sou Guilherme Martins, desenvolvedor web e criador da
+          <strong>LumenDigital</strong> — onde ideias ganham vida, do escuro ao
+          digital. Com foco em design funcional, identidade visual e
+          experiências que brilham, crio soluções sob medida que conectam você
+          ao mundo digital de forma clara, criativa e moderna.
         </p>
       </section>
 
@@ -240,64 +265,82 @@
         <ul>
           <li><strong>Nome Fantasia:</strong> LumenDigital</li>
           <li><strong>Localização:</strong> João Pessoa - PB</li>
-          <li><strong>Email Profissional:</strong> guilherme.martins.co@outlook.com</li>
-          <li><strong>CNPJ:</strong> MEI - 00.000.000/0001-00</li>
+          <li>
+            <strong>Email Profissional:</strong>
+            lumentecdigital@gmail.com
+          </li>
         </ul>
       </section>
 
       <section id="servicos">
-        <h2>Serviços Oferecidos</h2>
+        <h2>Serviços</h2>
         <ul>
-          <li>Desenvolvimento de sites institucionais</li>
-          <li>Criação de portfólios e páginas pessoais</li>
-          <li>Manutenção e melhorias em sites existentes</li>
-          <li>Consultoria técnica para presença digital</li>
-          <li>Landing pages e páginas de vendas</li>
+          <li>🖥️ Formatação e configuração de computadores</li>
+          <li>💾 Upgrade de HD, SSD, RAM</li>
+          <li>🧼 Limpeza preventiva e diagnósticos leves</li>
+          <li>🌐 Criação de páginas web estáticas</li>
+          <li>📈 Cartões de visita digitais e páginas de apresentação</li>
         </ul>
       </section>
 
       <section id="contato">
-  <h2>Entre em Contato</h2>
+        <h2>Entre em Contato</h2>
+        <div class="contato-cards">
+          <article>
+            <h3><i class="fas fa-envelope"></i> Email</h3>
+            <p>
+              <a href="mailto:lumentecdigital@gmail.com"
+                >lumentecdigital@gmail.com</a
+              >
+            </p>
+          </article>
 
-  <div class="contato-cards">
-    <article>
-      <h3><i class="fas fa-envelope"></i> Email</h3>
-      <p>
-        <a href="mailto:guilhermemartins@gmail.com">guilhermemartins@gmail.com</a><br />
-        <a href="mailto:guilherme.martins.co@outlook.com">guilherme.martins.co@outlook.com</a>
-      </p>
-    </article>
+          <article>
+            <h3><i class="fas fa-phone"></i> WhatsApp</h3>
+            <p>
+              <a href="https://wa.me/5583988727492" target="_blank"
+                >Fale comigo no WhatsApp</a
+              >
+            </p>
+          </article>
+        </div>
+        <address>João Pessoa - PB, Brasil</address>
+      </section>
 
-    <article>
-      <h3><i class="fas fa-phone"></i> Telefone</h3>
-      <p><a href="tel:+5583987568793">(83) 98756-8793</a></p>
-    </article>
-
-    <article>
-      <h3><i class="fab fa-linkedin"></i> LinkedIn</h3>
-      <p><a href="https://linkedin.com/in/guilhermemartins" target="_blank">linkedin.com/in/guilhermemartins</a></p>
-    </article>
-  </div>
-
-  <address>João Pessoa - PB, Brasil</address>
-</section>
-
-     <footer>
-  <p>&copy; 2025 LumenDigital — Todos os direitos reservados.</p>
-  <p>
-    Portfólio em constante construção.
-    <br />
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/G-M-Shy" target="_blank">github.com/G-M-Shy</a>
-  </p>
-</footer>
-
+      <footer>
+        <p>&copy; 2025 LumenDigital — Todos os direitos reservados.</p>
+        <p>
+          Portfólio em constante construção.
+          <br />
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/G-M-Shy" target="_blank"
+            >github.com/G-M-Shy</a
+          >
+        </p>
+      </footer>
     </main>
+
+    <div id="voltar-topo" onclick="scrollToTop()">⬆</div>
 
     <script>
       const intro = document.getElementById("intro");
       const fireflyContainer = document.getElementById("fireflies");
       const main = document.getElementById("main");
+
+      let fireflyCount = parseInt(localStorage.getItem("fireflyCount") || "0");
+      fireflyCount++;
+      localStorage.setItem("fireflyCount", fireflyCount);
+
+      if (fireflyCount % 5 === 1) {
+        for (let i = 0; i < 25; i++) {
+          const firefly = document.createElement("div");
+          firefly.classList.add("firefly");
+          firefly.style.top = Math.random() * 100 + "%";
+          firefly.style.left = Math.random() * 100 + "%";
+          firefly.style.animationDuration = 1 + Math.random() * 3 + "s";
+          fireflyContainer.appendChild(firefly);
+        }
+      }
 
       for (let i = 0; i < 25; i++) {
         const firefly = document.createElement("div");
@@ -317,6 +360,44 @@
           main.style.opacity = 1;
         }, 1000);
       }, 5000);
+    </script>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      const botaoTopo = document.getElementById("voltar-topo");
+      let isDragging = false,
+        offsetX,
+        offsetY;
+
+      botaoTopo.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        offsetX = e.clientX - botaoTopo.getBoundingClientRect().left;
+        offsetY = e.clientY - botaoTopo.getBoundingClientRect().top;
+        document.body.style.userSelect = "none";
+      });
+
+      document.addEventListener("mouseup", () => {
+        isDragging = false;
+        document.body.style.userSelect = "auto";
+      });
+
+      document.addEventListener("mousemove", (e) => {
+        if (isDragging) {
+          botaoTopo.style.left = `${e.clientX - offsetX}px`;
+          botaoTopo.style.top = `${e.clientY - offsetY}px`;
+        }
+      });
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          botaoTopo.style.display = "flex";
+        } else {
+          botaoTopo.style.display = "none";
+        }
+      });
     </script>
   </body>
 </html>
